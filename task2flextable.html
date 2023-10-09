@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Завдання 2.2</title>
+
+	<style>
+
+table{
+		width: 100%;
+		border-spacing: 10px 10px;
+	}
+   
+	.header {
+		height: 100px;
+		width: 100%;
+		text-align: right;
+		background: rgb(255, 204, 0);
+        border: 2px solid black;
+}
+
+    .footer {
+	    height: 100px;
+		width: 100%;
+		background: rgb(255, 204, 0);
+        text-align: left;
+        border: 2px solid black;
+}
+    .whit{
+	    height: 60px;
+	    width: 20%;
+	    background: white;
+        margin-left: 10px;
+}
+
+
+#_2{ 
+	background: blue;
+    width: 33%;
+    height: 400px;
+    border: 2px solid black;
+}
+#_3{
+	background: rgb(255, 255, 255);
+    width: 33%;
+    height: 300px;
+    border: 2px solid black;
+}
+#_4{
+	background: blue;
+    width: 33%;
+    height: 300px;
+    border: 2px solid black;
+}
+
+div{
+    border: 2px solid black;  
+}
+
+.whit2{
+	background: red;
+    width: 100%;
+    height: 40px;
+}
+
+.whit3{
+	background: red;
+    width: 100%;
+    height: 50px;
+    margin-top: 230px;
+}
+
+
+	</style>
+</head>
+<body>
+	<table>
+		<tr>	
+		<td class="header" colspan="3"> <div class="whit"></div>1</td>
+        </tr>
+        <tr>
+		<td id="_2" rowspan="2">2</td>
+        <td colspan="3"><div class="whit2"></div></td>
+        <td></td>
+        <tr>
+        <td id="_3">3<div class="whit3"></div></td>
+        <td id="_4">4</td>  
+        </tr>
+        </tr>
+
+		<tr>
+			<td class="footer" colspan="3">5</td>
+		</tr>
+	    </table>
+</body>
+</html>

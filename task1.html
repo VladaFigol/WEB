@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Завдання 1</title>
+    <link rel="stylesheet" href="/task1+/style.css">
+    <script src="/task1+/script.js"></script>
+</head>
+
+<body class="back">
+    <header id="myheader">
+        <div class="menu">
+            <div class="menu-item"><a href="#main-box">Детальніше про проєкт</a></div>
+            <div class="menu-item"><a href="#catalog-box">Каталог</a></div>
+            <div class="menu-item"><a href="#catalog-box">Пошук</a></div>
+          </div>
+    </header>
+
+<main>
+    <h1 class="title">Каталог найкращих українських фільмів</h1>
+    <div id="main-box">
+        <img class="img-main" src="/пікчі/стрічка.png">
+	<div class="main-text">
+<p>
+    Український кінематограф здобуває все більшу популярність і визнання як на внутрішньому, так і на міжнародному рівнях. 
+    Дивитись українські фільми - це не тільки підтримка національної культури, але й можливість дізнатись більше про історію, традиції, менталітет та проблеми нашого народу.
+
+Український кінематограф завжди був на високому рівню розвитку, але й до сих пір він продовжує розвиватись та вдосконалюватись, пропонуючи глядачам різноманітні жанри та тематики: 
+від історичних епопей до сучасних соціальних драм. Українські режисери та актори демонструють високий рівень майстерності та професіоналізму, що забезпечує якісний та цікавий продукт для глядача.
+Дивлячись українські фільми, ми можемо більш детально зрозуміти проблеми та виклики, з якими стикається наша країна. Це може стати поштовхом до обговорення та пошуку рішень, а також допомогти зберегти та розвивати нашу національну ідентичність.
+Крім того, дивлячись українські фільми, ми підтримуємо розвиток вітчизняного кіно та створення нових творчих проектів, що сприяє розвитку культурної індустрії в Україні.
+Проте найважливіша причина це, безумовно, те, що українські фільми дійсно цікаві!! Часто вони не стоять в пріоритеті при виборі фільму на вечір, так як люди звикли думати, що зарубіжне - це автоматично краще.
+Проте це зовсім не так і даний проєкт був розроблений саме для доведення цього. У даному каталозі зібрані популярні українські фільми, що отримали шквал позитивних відгуків від глядачів.
+</p>
+</div>
+</div>
+<br>
+<div class="filmpic">
+    <img class="filmel" src="/пікчі/жива_ватра.jpg">
+    <img class="filmel" src="/пікчі/зима_у_вогні.jpg">
+    <img class="filmel" src="/пікчі/мої_думки_тихі.jpg">
+    <img class="filmel" src="/пікчі/назви_своє_ім'я.jpg">
+    <img class="filmel" src="/пікчі/поводир.png">
+    <img class="filmel" src="/пікчі/кіборги.jpg">
+    <img class="filmel" src="/пікчі/атлантида.jpg">
+    <img class="filmel" src="/пікчі/наші_котики.jpg">
+    <img class="filmel" src="/пікчі/мої_думки_тихі.jpg">
+    <img class="filmel" src="/пікчі/назви_своє_ім'я.jpg">
+    <img class="filmel" src="/пікчі/жива_ватра.jpg">
+    <img class="filmel" src="/пікчі/зима_у_вогні.jpg">
+    <img class="filmel" src="/пікчі/поводир.png">
+    <img class="filmel" src="/пікчі/кіборги.jpg">
+    <img class="filmel" src="/пікчі/атлантида.jpg">
+    <img class="filmel" src="/пікчі/наші_котики.jpg">
+    <img class="filmel" src="/пікчі/жива_ватра.jpg">
+    <img class="filmel" src="/пікчі/зима_у_вогні.jpg">
+    </div>
+    <br>
+<div id="catalog-box">
+<div class="forms">
+    <h2 class="text1">Що Вас цікавить?</h2>
+    <form>
+        <label for="sortSelect">Сортувати каталог:</label>
+        <select id="sortSelect" onchange="sortTable()">
+        <option value="alphabetic">За алфавітом</option>
+        <option value="year">За роком виходу</option>
+        </select>
+    </form>
+    <br>
+    <form>
+        <label for="searchInput">Знайти фільм:</label>
+        <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Пошук за назвою">
+    </form>
+</div>
+
+<div class="catalog">
+    <table id="myTable">
+        <tr>
+          <th>Назва</th>
+          <th>Рік</th>
+          <th>Жанр</th>
+          <th>Афіша</th>
+        </tr>
+        <tr>
+          <td>Кіборги</td>
+          <td>2017</td>
+          <td>Екшн, військова драма</td>
+          <td><img class="afisha" src="/пікчі/кіборги.jpg" alt="kiborgi"></td>
+        </tr>
+        <tr>
+          <td>Тіні забутих предків</td>
+          <td>1964</td>
+          <td>Художній</td>
+          <td><img class="afisha" src="/пікчі/тіні_забутих_предків.jpg" alt="tini"></td>
+        </tr>
+        <tr>
+          <td>Мої думки тихі</td>
+          <td>2019</td>
+          <td>Трагікомедія</td>
+          <td><img class="afisha" src="/пікчі/мої_думки_тихі.jpg" alt="dumki"></td>
+        </tr>
+        <tr>
+          <td>Атлантида</td>
+          <td>2019</td>
+          <td>Драма</td>
+          <td><img class="afisha" src="/пікчі/атлантида.jpg" alt="atlantida"></td>
+        </tr>
+        <tr>
+            <td>Жива ватра</td>
+            <td>2014</td>
+            <td>Науково-пізнавальний, документальний</td>
+            <td><img class="afisha" src="/пікчі/жива_ватра.jpg" alt="vatra"></td>
+          </tr>
+      </table>
+      <div id="tableContainer"></div>
+</div>
+</div>
+</main>
+
+<footer>
+    <div class="foot-box">
+        <p class="text2">Створено в межах лабораторної роботи 3 з дисципліни "Інтернет-технології та проєктування WEB-застосунків" студенткою групи ІС-23 Фіголь Владиславою.</p>
+    </div>
+</footer>
+
+	
+</body>
+</html>
